@@ -1,0 +1,6 @@
+<div class="section" *ngFor="let section of notes; index as sectionIndex;">
+  <div>c_{{sectionIndex+1}}:</div>
+
+  <app-test11-note *ngFor="let note of section; index as noteIndex;"
+                   [note]="note" [index]="offsets[sectionIndex] + noteIndex"></app-test11-note>
+</div>
