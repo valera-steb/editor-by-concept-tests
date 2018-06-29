@@ -1,7 +1,7 @@
 <div class="note">
-  <div class="note-content text-block">
+  <div class="note-content text-block" #textBlock>
     <div class="note-number">.{{index}}.</div>
-    <span *ngFor="let sym of textSplit.elements">{{sym}}</span>
+    <span #span *ngFor="let sym of textSplit.elements">{{sym}}</span>
   </div>
 
   <app-note-sub-section *ngFor="let sub of textSplit.subNotes"
