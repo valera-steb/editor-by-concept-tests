@@ -1,0 +1,9 @@
+<div class="note">
+  <div class="note-content text-block" #textBlock>
+    <div class="note-number">.{{index}}.</div>
+    <span #span *ngFor="let sym of textSplit.elements">{{sym}}</span>
+  </div>
+
+  <app-test-12-sub *ngFor="let sub of textSplit.subNotes"
+                   [subSection]="sub"></app-test-12-sub>
+</div>

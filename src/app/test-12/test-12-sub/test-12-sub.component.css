@@ -1,0 +1,8 @@
+.note-sub-block {
+  padding-top: 3px;
+  padding-left: 20px;
+}
+
+.note-sub-block .mark {
+  display: inline-block;
+}

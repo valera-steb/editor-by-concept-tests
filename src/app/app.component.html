@@ -1,2 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-test11-root></app-test11-root>
+<nav>
+  <a routerLink="/{{route.path}}" *ngFor="let route of routes">{{route.path}}</a>
+</nav>
+
+<router-outlet></router-outlet>

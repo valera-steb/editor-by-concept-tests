@@ -10,7 +10,7 @@ import {TextBoxContainedService} from '../textBoxContained.service';
   styleUrls: ['./root.component.css'],
   providers: [TextBoxContainedService]
 })
-export class RootComponent implements OnInit, AfterViewInit {
+export class Root11Component implements OnInit, AfterViewInit {
 
   notes = notes;
   offsets: number[];
@@ -32,11 +32,13 @@ export class RootComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    console.log(this.viewChildren);
     console.log(this.textBlocks);
     console.log(this.subSections);
   }
 
   logTextBlocks() {
     console.log(this.container.items);
+    console.log(this.viewChildren.map(x => x.textSplit.elements[0]));
   }
 }
