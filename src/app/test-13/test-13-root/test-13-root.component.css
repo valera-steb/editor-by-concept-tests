@@ -1,0 +1,36 @@
+#grid {
+  display: grid;
+  grid-template: "menu menu menu"
+  "tree files params"
+  "search search search"
+  "state state state";
+}
+
+#grid > div {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.tree {
+  grid-area: tree;
+}
+
+.editors {
+  grid-area: files;
+}
+
+.params-right {
+  grid-area: params;
+}
+
+.search {
+  grid-area: search;
+}
+
+.state {
+  grid-area: state;
+}
