@@ -1,0 +1,11 @@
+.components > div {
+  display: inline-block;
+  width: 40%;
+  border: 1px solid black;
+}
+
+.logger {
+  height: 300px;
+  width: 400px;
+  overflow: auto;
+}

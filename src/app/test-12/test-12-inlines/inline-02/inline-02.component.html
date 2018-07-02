@@ -1,0 +1,23 @@
+<div class="components">
+  <div>
+    <app-inline-02-active-container
+      [model]="model" [log]="log"></app-inline-02-active-container>
+  </div>
+
+  <div>
+    <app-inline-02-passive-container
+      [model]="model" [log]="log"></app-inline-02-passive-container>
+  </div>
+</div>
+
+<ul class="logger" #logElement>
+  <li *ngFor="let log of logFile">{{log}}</li>
+</ul>
+
+<label> console <br/>
+  <textarea [(ngModel)]="console"></textarea>
+</label>
+<br/>
+
+<button (click)="runConsole()">run</button>
+<button (click)="logFile=[]">clear</button>

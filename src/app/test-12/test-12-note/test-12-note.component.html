@@ -4,6 +4,8 @@
     <span #span *ngFor="let sym of textSplit.elements">{{sym}}</span>
   </div>
 
+  <app-inliner *ngIf="textSplit.component" [component]="textSplit.component"></app-inliner>
+
   <app-test-12-sub *ngFor="let sub of textSplit.subNotes"
                    [subSection]="sub"></app-test-12-sub>
 </div>
