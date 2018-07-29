@@ -17,7 +17,7 @@ import {Inline02PassiveContainerComponent} from './test-12-inlines/inline-02/inl
   ],
   declarations: [Test12RootComponent, Test12NoteComponent, Test12SubComponent, Inline01Component, InlinerComponent, Inline02Component,
     Inline02ActiveContainerComponent, Inline02ActiveItemComponent, Inline02PassiveContainerComponent],
-  exports: [Test12RootComponent],
+  exports: [Test12RootComponent, Test12NoteComponent],
   entryComponents: [Inline01Component, Inline02Component]
 })
 export class Test12Module {

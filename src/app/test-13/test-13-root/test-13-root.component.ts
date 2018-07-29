@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {notes} from '../notes';
+import {splitNotes} from '../../test-12/spliter';
 
 @Component({
   selector: 'app-test-13-root',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Test13RootComponent implements OnInit {
 
+  notes = notes;
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

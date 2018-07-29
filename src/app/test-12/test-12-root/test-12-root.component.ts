@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {notes} from '../notes';
+import {splitNotes} from '../spliter';
 
 @Component({
   selector: 'app-test-12-root',
@@ -15,12 +16,7 @@ export class Test12RootComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.offsets = this.notes.reduce((prev, section) => {
-      return {
-        offsets: prev.offsets.concat(prev.sum),
-        sum: prev.sum + section.length
-      };
-    }, {offsets: [], sum: 1}).offsets;
+    this.offsets = splitNotes(this.notes);
   }
 
 }

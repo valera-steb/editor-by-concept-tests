@@ -1,0 +1,10 @@
+<div class="grid">
+  <div class="tree">
+    <app-inline-01-folder *ngFor="let folder of tree"
+                          [folder]="folder" [logs]="logs"></app-inline-01-folder>
+  </div>
+
+  <div class="logger">
+    <div *ngFor="let log of logs">{{log}}</div>
+  </div>
+</div>

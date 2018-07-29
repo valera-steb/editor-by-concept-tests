@@ -6,3 +6,12 @@ export function splitText(item) {
     component: isSimple ? null : item.c
   };
 }
+
+export function splitNotes(notes){
+  return notes.reduce((prev, section) => {
+    return {
+      offsets: prev.offsets.concat(prev.sum),
+      sum: prev.sum + section.length
+    };
+  }, {offsets: [], sum: 1}).offsets;
+}

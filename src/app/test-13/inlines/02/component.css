@@ -1,0 +1,18 @@
+.grid {
+  display: grid;
+  grid-template: "menu menu"
+  "tree content";
+  grid-template-columns: 150px auto;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.tree {
+  grid-area: tree;
+}
+
+.content {
+  grid-area: content;
+}

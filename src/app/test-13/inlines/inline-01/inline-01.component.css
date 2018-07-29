@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template: "tree logger";
+  grid-template-columns: 150px auto;
+}
+
+.tree {
+  width: 150px;
+  grid-area: tree;
+}
+
+.logger {
+  grid-area: logger;
+}
